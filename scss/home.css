@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f11228;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_2 {
+  display: none;
+}
+
+.container_2.active {
+  display: block;
+}
+.container_2.active .home {
+  min-width: 300px;
+  max-height: 600px;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  background-color: #eff3f6;
+  padding: 12px;
+  display: grid;
+  grid-template-rows: 2fr 6fr 1fr;
+}
+.container_2.active .home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #0e2a4f;
+  color: #f8fafb;
+  min-height: 150px;
+  padding: 12px;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+}
+.container_2.active .home header .notify {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.container_2.active .home header .notify:hover {
+  opacity: 0.8;
+}
+.container_2.active .home header .title i {
+  margin-right: 7px;
+}
+.container_2.active .home header .chart {
+  position: absolute;
+  min-width: 250px;
+  max-height: 250px;
+  background-color: #f8fafb;
+  color: #000;
+  top: 40%;
+  padding: 10px;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  display: grid;
+  grid-template-rows: 7fr 3fr;
+}
+.container_2.active .home header .chart .show_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container_2.active .home header .chart .show_info .support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.container_2.active .home header .chart .show_info .support .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(151, 151, 151);
+  font-size: 0.65rem;
+}
+.container_2.active .home header .chart .show_info .support .item .icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.container_2.active .home header .chart .show_info .support .item:nth-child(1) .icon {
+  background-color: rgb(226, 17, 80);
+}
+.container_2.active .home header .chart .show_info .support .item:nth-child(2) .icon {
+  background-color: rgb(202, 209, 16);
+}
+.container_2.active .home header .chart .show_info .support .item:nth-child(3) .icon {
+  background-color: rgb(18, 203, 43);
+}
+.container_2.active .home header .chart .show_info .support .item:nth-child(4) .icon {
+  background-color: rgb(17, 129, 227);
+}
+.container_2.active .home header .chart .show_info .month_expenses .now_month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.container_2.active .home header .chart .show_info .month_expenses .now_month div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.container_2.active .home header .chart .show_info .month_expenses .now_month div span.text {
+  font-size: 0.5rem;
+  color: rgb(151, 151, 151);
+}
+.container_2.active .home header .chart .show_info .month_expenses .now_month div span.number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(77, 66, 66);
+}
+.container_2.active .home header .chart .show_info .month_expenses .now_month div.month_saving .number {
+  color: rgb(18, 203, 43);
+}
+.container_2.active .home header .chart .show_info .month_expenses .last_month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.6rem;
+}
+.container_2.active .home header .chart .show_info .month_expenses .last_month label {
+  color: #979797;
+}
+.container_2.active .home header .chart .show_info .month_expenses .last_month .number {
+  color: #4d4242;
+  font-weight: 600;
+}
+.container_2.active .home header .chart .show_info .month_expenses .last_month .number .percent {
+  color: #e21150;
+}
+.container_2.active .home header .chart .show_info .month_expenses .last_month .text {
+  color: #4d4242;
+  font-weight: 600;
+}
+.container_2.active .home .content {
+  margin-top: 180px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.container_2.active .home .content .scroll_content {
+  min-height: 300px;
+  padding: 10px;
+}
+.container_2.active .home .content .scroll_content .title {
+  margin-bottom: 10px;
+}
+.container_2.active .home .content .scroll_content .title h3 {
+  font-size: 0.85rem;
+  font-weight: italic;
+  color: #4d4242;
+}
+.container_2.active .home .content .scroll_content .list_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+.container_2.active .home .content .scroll_content .list_items .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.container_2.active .home .content .scroll_content .list_items .item .item_name {
+  display: flex;
+  align-items: center;
+}
+.container_2.active .home .content .scroll_content .list_items .item .item_name .image {
+  padding: 8px;
+  background-color: #f8fafb;
+  margin-right: 5px;
+  border-radius: 0.5rem;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.container_2.active .home .content .scroll_content .list_items .item .item_name .image i {
+  color: #cad110;
+}
+.container_2.active .home .content .scroll_content .list_items .item .item_name .name_and_date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container_2.active .home .content .scroll_content .list_items .item .item_name .name_and_date .name {
+  color: #4d4242;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.container_2.active .home .content .scroll_content .list_items .item .item_name .name_and_date .date {
+  font-size: 0.5rem;
+}
+.container_2.active .home .content .scroll_content .list_items .item .item_cost {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #4d4242;
+}
+.container_2.active .home .content .scroll_content .list_items .item:nth-child(2) .item_name .image i {
+  color: #1181e3;
+}
+.container_2.active .home .content .scroll_content .list_items .item:nth-child(3) .item_name .image i {
+  color: #12cb2b;
+}
+.container_2.active .home .content .scroll_content .list_items .item:nth-child(4) .item_name .image i {
+  color: #e21150;
+}
+.container_2.active .home .content .scroll_content .list_items .item:nth-child(5) .item_name .image i {
+  color: #e21150;
+}
+.container_2.active .home .content .scroll_content .list_items .item:nth-child(6) .item_name .image i {
+  color: #1181e3;
+}
+.container_2.active .home .content::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+.container_2.active .home .content::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.container_2.active .home .content:hover::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+.container_2.active .home .nav_bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8fafb;
+  border-radius: 0 0 1rem 1rem;
+  position: relative;
+}
+.container_2.active .home .nav_bar .btn {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #b2b2b2;
+  font-size: 1.25rem;
+  transition: all 0.1s ease-in-out;
+  width: 45px;
+  height: 45px;
+}
+.container_2.active .home .nav_bar .btn span {
+  width: 25px;
+  height: 25px;
+}
+.container_2.active .home .nav_bar .btn_add-expense {
+  position: absolute;
+  top: -50%;
+  right: 5%;
+  z-index: 99;
+  background-color: #0e2a47;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.container_2.active .home .nav_bar .btn_add-expense i {
+  color: #f8fafb;
+  margin: 10px;
+  width: 16px;
+  height: 16px;
+}
+.container_2.active .home .nav_bar .btn.active {
+  background-color: #f11228;
+  color: #f8fafb;
+  transform: translateY(-15px);
+}/*# sourceMappingURL=home.css.map */

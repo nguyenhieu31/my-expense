@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/home.css">
+  <link rel="stylesheet" href="./scss/add.css">
+  <link rel="stylesheet" href="./scss/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css"
+    integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My expense</title>
+</head>
+
+<body>
+  <div class="container_1 wrapper" value="chart">
+    <div class="stats">
+      <header>
+        <div class="prev_stats">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="text_stats">
+          <h4>Stats</h4>
+        </div>
+      </header>
+      <div class="content"></div>
+    </div>
+  </div>
+  <div class="container_2 wrapper active" value="home">
+    <div class="home">
+      <header>
+        <div class="title">
+          <i class="fa-solid fa-list"></i>
+          <span class="text">My Expenses</span>
+        </div>
+        <div class="notify">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="chart">
+          <div class="pie_chart"></div>
+          <div class="show_info">
+            <div class="support">
+              <div class="item">
+                <div class="icon"></div>
+                <span class="text">Academics</span>
+              </div>
+              <div class="item">
+                <div class="icon"></div>
+                <span class="text">Rent</span>
+              </div>
+              <div class="item">
+                <div class="icon"></div>
+                <span class="text">Food</span>
+              </div>
+              <div class="item">
+                <div class="icon"></div>
+                <span class="text">Other</span>
+              </div>
+            </div>
+            <div class="month_expenses">
+              <div class="now_month">
+                <div class="month_expense">
+                  <span class="text">Monthly Expenses</span>
+                  <span class="number">$15,500</span>
+                </div>
+                <div class="month_saving">
+                  <span class="text">Monthly Saving</span>
+                  <span class="number">$8,500</span>
+                </div>
+                <div class="month_income">
+                  <span class="text">Monthly Income</span>
+                  <span class="number">$24,000</span>
+                </div>
+              </div>
+              <div class="last_month">
+                <div class="percent_last_month">
+                  <label for="percent">Last month</label>
+                  <span class="number" name="percent">$11,625 <span class="percent">(-25%)</span></span>
+                </div>
+                <span class="text">All expenses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="scroll_content">
+          <div class="title">
+            <h3>Recent Expenses</h3>
+          </div>
+          <div class="list_items">
+            <div class="item">
+              <div class="item_name">
+                <div class="image">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="name_and_date">
+                  <span class="name">Food</span>
+                  <span class="date">02 July 2022</span>
+                </div>
+              </div>
+              <div class="item_cost">
+                <span class="cost">$4500</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_name">
+                <div class="image">
+                  <i class="fa-solid fa-money-bill"></i>
+                </div>
+                <div class="name_and_date">
+                  <span class="name">Rent</span>
+                  <span class="date">01 July 2022</span>
+                </div>
+              </div>
+              <div class="item_cost">
+                <span class="cost">$8000</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_name">
+                <div class="image">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="name_and_date">
+                  <span class="name">Internet Charge</span>
+                  <span class="date">28 June 2022</span>
+                </div>
+              </div>
+              <div class="item_cost">
+                <span class="cost">$999</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_name">
+                <div class="image">
+                  <i class="fa-solid fa-van-shuttle"></i>
+                </div>
+                <div class="name_and_date">
+                  <span class="name">Transport</span>
+                  <span class="date">28 June 2022</span>
+                </div>
+              </div>
+              <div class="item_cost">
+                <span class="cost">$10000</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_name">
+                <div class="image">
+                  <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="name_and_date">
+                  <span class="name">Academics</span>
+                  <span class="date">05 July 2022</span>
+                </div>
+              </div>
+              <div class="item_cost">
+                <span class="cost">$12000</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_name">
+                <div class="image">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="name_and_date">
+                  <span class="name">Other</span>
+                  <span class="date">02 July 2022</span>
+                </div>
+              </div>
+              <div class="item_cost">
+                <span class="cost">$2345</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav_bar">
+        <div class="btn">
+          <span class="material-symbols-outlined">
+            monitoring
+          </span>
+        </div>
+        <div class="btn active">
+          <span class="material-symbols-outlined">
+            grid_view
+          </span>
+        </div>
+        <div class="btn">
+          <span class="material-symbols-outlined">
+            person
+          </span>
+        </div>
+        <div class="btn_add-expense">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container_3 wrapper" value="profile">
+    <div class="profile active">
+      <div class="header">
+        <header>
+          <div class="prev_profile">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="title">
+            <h4 class="title">Profile</h4>
+          </div>
+        </header>
+        <div class="content">
+          <div class="header_content">
+            <div class="header_content-left">
+              <div class="image"></div>
+              <div class="information">
+                <h4 class="name">HieuSecond</h4>
+                <span class="gmail">hieufaptv777@gmail.com</span>
+              </div>
+            </div>
+            <div class="header_content-right">
+              <div class="icon_edit">
+                <i class="fa-solid fa-pencil"></i>
+              </div>
+            </div>
+          </div>
+          <div class="body_content">
+            <div class="support_items">
+              <div class="item">
+                <div class="item_left">
+                  <i class="fa-regular fa-bell"></i>
+                  <span class="text">Notifications</span>
+                </div>
+                <div class="item_right">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_left">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="text">Settings</span>
+                </div>
+                <div class="item_right">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_left">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span class="text">About Us</span>
+                </div>
+                <div class="item_right">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_left">
+                  <i class="fa-regular fa-circle-question"></i>
+                  <span class="text">Help & Support</span>
+                </div>
+              </div>
+            </div>
+            <div class="log_out">
+              <div class="text">
+                <span>Logout</span>
+              </div>
+              <div class="icon_out">
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="btn_profile">
+          <span class="material-symbols-outlined">
+            monitoring
+          </span>
+        </div>
+        <div class="btn_profile">
+          <span class="material-symbols-outlined">
+            grid_view
+          </span>
+        </div>
+        <div class="btn_profile active">
+          <span class="material-symbols-outlined">
+            person
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="edit_profile">
+      <div class="header">
+        <header>
+          <div class="prev_edit_profile">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="title">
+            <h4 class="title">Edit Profile</h4>
+          </div>
+        </header>
+        <div class="content">
+          <div class="avatar">
+            <div class="image"></div>
+            <div class="icon">
+              <i class="fa-solid fa-pencil"></i>
+            </div>
+          </div>
+          <div class="form">
+            <div class="box">
+              <label for="name">Full Name</label>
+              <input type="text" name="name" placeholder="input full name">
+            </div>
+            <div class="box">
+              <label for="email">Email</label>
+              <input type="text" name="email" placeholder="input email">
+            </div>
+            <div class="box">
+              <label for="phone">Phone</label>
+              <input type="text" name="phone" placeholder="input phone">
+            </div>
+            <div class="box">
+              <label for="date">Date of birth</label>
+              <input type="Date" name="date" placeholder="input Date of birth">
+            </div>
+            <div class="box">
+              <label for="monthly_icome">Monthly Income</label>
+              <input type="text" name="monthly_income" placeholder="input monthly income">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="save_btn">
+        <span class="text">SAVE</span>
+      </div>
+    </div>
+  </div>
+  <div class="container_4 wrapper" value="add">
+    <div class="add">
+      <header>
+        <div class="exit_add">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="title">
+          <h3>Add Expense</h3>
+        </div>
+      </header>
+      <div class="content">
+        <div class="update_date">
+          <span class="value_date">01 July 2022</span>
+          <div class="calendar">
+            <div class="icon_cal">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="show_calendar">
+              <div class="calendar_header">
+                <span class="month_picker" id="month_picker">February</span>
+                <div class="year_picker">
+                  <i class="fa-solid fa-angle-left year_change prev"></i>
+                  <span class="year">2022</span>
+                  <i class="fa-solid fa-angle-right year_change next"></i>
+                </div>
+              </div>
+              <div class="calendar_body">
+                <div class="calendar_weeks">
+                  <div>Mon</div>
+                  <div>Tue</div>
+                  <div>Wed</div>
+                  <div>Thu</div>
+                  <div>Fri</div>
+                  <div>Sat</div>
+                  <div>Sun</div>
+                </div>
+                <div class="calendar_days"></div>
+              </div>
+              <div class="month_list"></div>
+            </div>
+          </div>
+        </div>
+        <div class="rent_change">
+          <div class="logo">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="text">Rent</span>
+          </div>
+          <div class="change_style-expense">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="input_info">
+          <div class="input_text">
+            <input type="text">
+          </div>
+          <div class="btn_save">
+            <span>Save</span>
+          </div>
+          <div class="input_number">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="dots">.</div>
+            <div class="number">0</div>
+            <div class="btn_delete">
+              <i class="fa-solid fa-delete-left"></i>
+            </div>
+          </div>
+          <div class="select_category">
+            <div class="header_category">
+              <span class="bar_single"></span>
+              <h4>Select Category</h4>
+            </div>
+            <div class="list_items">
+              <div class="item_expense">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Food</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-money-bill"></i>
+                <span>Rent</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-globe"></i>
+                <span>Internet</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-van-shuttle"></i>
+                <span>Transport</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Food</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-money-bill"></i>
+                <span>Rent</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-globe"></i>
+                <span>Internet</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-van-shuttle"></i>
+                <span>Transport</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Food</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-money-bill"></i>
+                <span>Rent</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-globe"></i>
+                <span>Internet</span>
+              </div>
+              <div class="item_expense">
+                <i class="fa-solid fa-van-shuttle"></i>
+                <span>Transport</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/style.js"></script>
+  <script src="./js/create_calendar.js"></script>
+</body>
+
+</html>
