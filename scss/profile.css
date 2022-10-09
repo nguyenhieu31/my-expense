@@ -69,7 +69,7 @@
 .container_3.active .profile.active .header .content .header_content .header_content-left .image {
   width: 40px;
   height: 40px;
-  background-image: url("/hochtmlcss/my_expense/img/8ED34222-56A2-4558-9032-10298DED5BCE (1).jpg");
+  background-image: url("/hochtmlcss/my_expense/img/Profile_image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,7 +248,7 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-image: url("/hochtmlcss/my_expense/img/8ED34222-56A2-4558-9032-10298DED5BCE (1).jpg");
+  background-image: url("/hochtmlcss/my_expense/img/Profile_image.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
